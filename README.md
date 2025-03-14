@@ -14,6 +14,23 @@ To contribute to this project, follow these steps:
    ```sh
    cd worldnow
    ```
+3. See what work needs to be done! Visible in:
+
+   - TODO.md
+   - Github Issues
+
+4. Make a seperate branch off of main.
+   ```sh
+   git checkout -b yourbranchname
+   ```
+5. Stage and Commit your changes!
+   ```sh
+   git add .
+   git commit -m "Your commit message"
+   ```
+6. Create a Pull Request in the Github Repository.
+
+7. Wait for your Pull Request to be reviewed and merged!
 
 ### Plugins
 
