@@ -1,0 +1,24 @@
+{
+  "name": "worldnow",
+  "version": "1.0.0",
+  "description": "Welcome to WorldNow, a weather / news website developed for IST 276 by: Jace Higdon, Tyler Jolley, and Brooks Carl.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cassa-sys/WorldNow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Cassa-sys/WorldNow/issues"
+  },
+  "homepage": "https://github.com/Cassa-sys/WorldNow#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
