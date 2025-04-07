@@ -4,3 +4,6 @@
 
 # Node Modules
 node_modules
+
+#Our .env file (We don't want to push our API keys :))
+.env
