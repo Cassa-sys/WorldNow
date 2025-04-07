@@ -1,0 +1,11 @@
+[build]
+  # The folder containing the index.html file
+  publish = "src"  # <-- specify that your publish directory is 'src'
+
+  # Optionally specify the build command for your project
+  command = "npm run build"  # or whatever build command your project needs
+
+[dev]
+  # Tell Netlify Dev to serve from the src directory
+  functions = "netlify/functions"
+  publish = "src"  # <-- point to the 'src' directory for local dev

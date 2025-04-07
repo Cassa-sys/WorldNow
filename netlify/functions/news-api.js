@@ -16,7 +16,7 @@ exports.handler = async (event, context) => {
   let startDate = new Date();
   startDate.setDate(startDate.getDate() - 7); // 7 days ago
   const formattedStartDate = startDate.toISOString().split("T")[0]; // Format as YYYY-MM-DD
-  let endDate = new Date.now();
+  let endDate = new Date();
   const formattedEndDate = endDate.toISOString().split("T")[0]; // Format as YYYY-MM-DD
   const url = `https://newsapi.org/v2/everything?qInTitle=${topic}&from=${formattedStartDate}&to=${formattedEndDate}&sortBy=popularity&apiKey=${apiKey}`;
 
