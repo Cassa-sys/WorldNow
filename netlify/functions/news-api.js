@@ -20,6 +20,15 @@ exports.handler = async (event, context) => {
   const formattedEndDate = endDate.toISOString().split("T")[0]; // Format as YYYY-MM-DD
   const url = `https://newsapi.org/v2/everything?qInTitle=${topic}&from=${formattedStartDate}&to=${formattedEndDate}&sortBy=popularity&apiKey=${apiKey}`;
 
+
+// Here are the only topics we allow, so if someone trys to use the API it won't work for them
+  const allowedTopics = ['Programming', 'Technology', 'Weather']
+  if(!allowedTopics.includes(topic)) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({error: "Please use a valid topic. [Programming, Technology, Weather]"})
+    }
+  }
   try {
     const response = await fetch(url);
     const data = await response.json();
