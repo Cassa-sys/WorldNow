@@ -1,6 +1,111 @@
+/* General style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
+    color: #333;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Header */
+h1 {
+    font-size: 3rem;
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* New News Container (▀̿Ĺ̯▀̿ ) */
 #newsContainer {
-    width: 100%;
-    height: 500px;
-    border: 1px solid;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual Article style */
+.article {
+    border-left: 5px solid #1e3a8a;
+    padding: 15px 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.article:hover {
+    background: #f0f4ff;
+    transform: scale(1.01);
+}
+
+.article a {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1e3a8a;
+    transition: color 0.2s ease;
+}
+
+.article a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.article span {
+    display: block;
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.article p {
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.5;
+}
+
+/* Scrollbar style */
+#newsContainer::-webkit-scrollbar {
+    width: 10px;
+}
+#newsContainer::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+#newsContainer::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+}
+#newsContainer::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .article a {
+        font-size: 1rem;
+    }
+
+    .article p {
+        font-size: 0.95rem;
+    }
 }
