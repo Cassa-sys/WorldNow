@@ -7,9 +7,15 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello World Now!</h1>
 	<div id="weatherContainer"></div>
-    <div id="newsContainer"></div>
+    <div id="newsContainer">
+        <div class="flex" id="topNewsContainer">
+            <button class="newsButton" onclick="fetchNews('Programming')">Programming</button>
+            <button class="newsButton" onclick="fetchNews('Technology')">Technology</button>
+            <button class="newsButton" onclick="fetchNews('Weather')">Weather</button>
+        </div>
+        <hr>
+    </div>
 </body>
 <script src="news_module/news.js"></script>
 <script src="weather_module/weather.js"></script>
